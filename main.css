@@ -6,9 +6,59 @@ body {
 	margin: 0;
 }
 
-.navigation {
+.logo {
 	background-color: #F6F9F9;
-	padding: 25px 100px;
+	padding: 20px 50px;
+	display: inline-block;
+}
+
+nav {
+	background: #F6F9F9;
+	height: 80px;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 100;
+}
+
+nav > a {
+	color: #2d3950;
+	font-family: "Open Sans", sans-serif;
+	font-size: 26px;
+	font-weight: 700;
+	left: 25px;
+	position: absolute;
+	text-align: left;
+	text-decoration: none;
+	top: 10px;
+}
+
+nav ul {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	margin: 0;
+	height: 50px;
+	background-color: #F6F9F9;
+	padding: 30px 50px 0 50px;
+}
+
+nav li {
+	display: inline-block;
+	padding: 0 18px;
+}
+
+nav li > a {
+	color: #2d3950;
+	text-decoration: none;
+	-webkit-transition: all 0.2s ease-in-out;
+			transition: all 0.2s ease-in-out;
+}
+
+nav li > a:hover,
+nav li > a:focus {
+	color: #15a4fa;
 }
 
 #cta {
@@ -54,10 +104,17 @@ body {
 	padding: 10px 15px;
 }
 
-#cta a {
+#cta > a {
 	color: #fff;
 	display: inline-block;
 	margin-top: 100px;
+	text-decoration: none;
+}
+
+#cta button a:link,
+#cta button a:visited {
+	color: #fff;
+	text-decoration: none;
 }
 
 #info {
@@ -135,7 +192,7 @@ body {
 #work {
 	background-color: #f6f9f9;
 	font-weight: 400;
-	padding: 50px 0;
+	padding: 70px 0 50px;
 	text-align: center;
 }
 
